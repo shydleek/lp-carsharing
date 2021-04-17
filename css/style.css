@@ -382,11 +382,16 @@ a {
   display: flex;
 }
 
+.slick-dots button{
+  cursor: pointer;
+}
+
 .reviews__item {
   border: 1px solid #c5ac2d;
   padding: 45px 30px;
   width: 270px;
   min-height: 300px;
+  cursor: pointer;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
@@ -480,6 +485,7 @@ a {
   font-weight: normal;
   line-height: 19px;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .feedback__form-btn:hover {
@@ -510,4 +516,217 @@ a {
 
 .footer__social-item {
   margin: 0 15px;
+}
+
+.menu__btn{
+  display: none;
+}
+
+@media (max-width: 1270px){
+  .conditions__box:hover {
+    transform: scale(1);
+  }
+  .top__item:hover {
+    transform: scale(1);
+  }
+  .benefits__car{
+    width: 40%;
+  }
+}
+
+@media (max-width: 1140px){
+  .conditions__inner{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .conditions__main{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1000px){
+  .top__heading{
+    display: block;
+  }
+  .top__content{
+    width: 100%;
+    padding-top: 30px;
+  }
+  .top__slider{
+    width: 100%;
+  }
+  .top__footing{
+    display: block;
+  }
+  .top__links{
+    padding-right: 0;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .top__items{
+    width: 100%;
+  }
+  .benefits__presentation{
+    width: 100%;
+    margin-top: 30px;
+  }
+  .benefits__content{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .benefits__text + .benefits__text{
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px){
+  .footer__inner{
+    justify-content: space-around;
+  }
+  .footer .menu{
+    display: none;
+  }
+}
+
+@media (max-width: 860px){
+  .menu{
+    order: 1;
+  }
+  .menu__list{
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    background-color: #332208;
+    text-align: center;
+    padding: 20px 0;
+    transform: translateY(-500px);
+    transition: all 0.5s;
+  }
+  .menu__list.menu__list--active{
+    transform: translateY(0);
+  }
+  .menu__item-link{
+    display: block;
+    padding: 20px 0;
+  }
+  .menu__btn{
+    display: block;
+    border: none;
+    cursor: pointer;
+    border-top: 2px solid #fefefe;
+    border-bottom: 2px solid #fefefe;
+    width: 35px;
+    height: 24px;
+    background-color: transparent;
+    position: relative;
+  }
+  .menu__btn::before{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background-color: #fefefe;
+    left: 0;
+    top: 9px;
+  } 
+  .conditions__box{
+    margin: 30px;
+  }
+  .feedback__img{
+    display: none;
+  }
+  .footer,
+  .reviews,
+  .feedback,
+  .benefits,
+  .conditions{
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 650px){
+  .conditions__box{
+    width: 100%;
+    min-height: 245px;
+  }
+  .conditions__box-title{
+    margin-bottom: 20px;
+  }
+  .conditions__main{
+    text-align: center;
+  }
+}
+
+@media (max-width: 536px){
+  .benefits__car{
+    width: 70%;
+  }
+  .benefits__list{
+    width: 100%;
+  }
+  .benefits__list-item{
+    margin-right: 0;
+    text-align: left;
+    padding-right: 0;
+    padding-left: 26px;
+  }
+  .benefits__list-item::after{
+    right: auto;
+    left: 0;
+  }
+  .benefits__list-item:nth-child(4) {
+    margin-right: 140px;
+  }
+}
+
+@media (max-width: 525px){
+  .top__items{
+    flex-wrap: wrap;
+  }
+  .top__item{
+    margin: 20px;
+  }
+  .top__slider-text{
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 450px){
+  .footer__inner{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .phone{
+    margin-top: 30px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 410px){
+  .top__item{
+    width: 100%;
+  }
+  .top__links{
+    text-align: center;
+  }
+  .top__link{
+    margin: 10px 15px;
+    display: inline-block;
+  }
+  .top__link + .top__link{
+    margin-left: 0;
+  }
+  .top__slider-text{
+    text-align: right;
+  }
+  .top__slider-text span{
+    display: block;
+    margin: 10px 0;
+  }
+  .conditions__box{
+    margin: 30px 0;
+  }
 }
